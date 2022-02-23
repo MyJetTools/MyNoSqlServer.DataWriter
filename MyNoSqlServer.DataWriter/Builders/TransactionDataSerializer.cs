@@ -1,10 +1,9 @@
-using System.Collections.Generic;
 using MyNoSqlServer.Abstractions;
 
 namespace MyNoSqlServer.DataWriter.Builders
 {
     
-    public class TransactionDataSerializer<T>  where T : IMyNoSqlDbEntity, new()
+    public class TransactionDataSerializer<T>  where T : IMyNoSqlEntity, new()
     {
 
         private readonly List<object> _transactionData = new List<object>();
@@ -97,7 +96,7 @@ namespace MyNoSqlServer.DataWriter.Builders
 
     }
     
-    internal class InsertOrUpdateRequestModel<T> where T:IMyNoSqlDbEntity, new()
+    internal class InsertOrUpdateRequestModel<T> where T:IMyNoSqlEntity, new()
     {
         public string Type { get; set; }
         public IEnumerable<T> Entities { get; set; }

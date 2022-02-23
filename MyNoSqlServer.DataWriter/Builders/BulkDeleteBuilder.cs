@@ -6,7 +6,7 @@ using MyNoSqlServer.Abstractions;
 namespace MyNoSqlServer.DataWriter.Builders
 {
     public class BulkDeleteBuilder<T>  
-        where T : IMyNoSqlDbEntity, new()
+        where T : IMyNoSqlEntity, new()
     {
         private readonly MyNoSqlServerDataWriter<T> _dataWriter;
 

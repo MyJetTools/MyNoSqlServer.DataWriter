@@ -9,7 +9,7 @@ using MyNoSqlServer.DataWriter.Builders;
 namespace MyNoSqlServer.DataWriter
 {
 
-    public class MyNoSqlServerDataWriter<T> : IMyNoSqlServerDataWriter<T> where T : IMyNoSqlDbEntity, new()
+    public class MyNoSqlServerDataWriter<T> : IMyNoSqlServerDataWriter<T> where T : IMyNoSqlEntity, new()
     {
 
         private const string RowController = "Row";

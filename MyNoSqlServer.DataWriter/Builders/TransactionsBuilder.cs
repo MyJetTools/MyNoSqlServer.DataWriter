@@ -5,7 +5,7 @@ using MyNoSqlServer.Abstractions;
 
 namespace MyNoSqlServer.DataWriter.Builders
 {
-    public class TransactionsBuilder<T> : ITransactionsBuilder<T> where T : IMyNoSqlDbEntity, new()
+    public class TransactionsBuilder<T> : ITransactionsBuilder<T> where T : IMyNoSqlEntity, new()
     {
         public static readonly System.Diagnostics.ActivitySource _source = new("MyNoSql.TransactionsBuilder");
 
